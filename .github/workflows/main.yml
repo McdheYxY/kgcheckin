@@ -1,9 +1,8 @@
 name: main
 on:
-  workflow_dispatch:
-  # push:
   schedule:
     - cron: 1 16 * * *
+  workflow_dispatch:
 jobs:
   run:
     runs-on: ubuntu-latest
